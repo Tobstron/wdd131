@@ -1,0 +1,60 @@
+:root {
+    --primary: #008753;
+    --secondary: #ffffff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Header */
+header {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Hero */
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+/* Layout */
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Sections */
+.info, .weather {
+    margin-bottom: 20px;
+}
+
+/* Weather icon (mobile) */
+.weather-icon {
+    width: 50px;
+}
+
+/* LARGE VIEW */
+@media (min-width: 768px) {
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* PSEUDO ELEMENT FOR WEATHER ICON */
+.weather h2::after {
+    content: " ⛅";
+}
+
+.weather-icon {
+    display: none;
+}
+
+}

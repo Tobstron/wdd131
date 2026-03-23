@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>WDD 131 – Dynamic Web Fundamentals – Nigeria</title>
+
+<meta name="description" content="WDD 131 country page about Nigeria featuring responsive design, weather details, and cultural highlights.">
+
+<meta name="author" content="Oluwatobi Fawole">
+
+<link rel="stylesheet" href="styles/place.css">
+
+<script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+<header>
+<h1>Nigeria</h1>
+</header>
+
+<!-- HERO IMAGE (RESPONSIVE) -->
+<section class="hero">
+<picture>
+  <source srcset="images/hero-small.jpg" media="(max-width: 600px)">
+  <source srcset="images/hero-large.jpg" media="(min-width: 601px)">
+  <img src="images/hero-large.jpg" alt="Nigeria landscape">
+</picture>
+</section>
+
+<main>
+
+<section class="info">
+<h2>About Nigeria</h2>
+<img src="images/flag.jpg" alt="Nigeria Flag">
+<p>
+Nigeria is a vibrant country in West Africa known for its diverse cultures,
+rich history, and booming cities like Lagos.
+</p>
+</section>
+
+<section class="weather">
+<h2>Weather</h2>
+
+<p>Temperature: <span id="temp">30</span>°C</p>
+<p>Wind Speed: <span id="wind">10</span> km/h</p>
+<p>Wind Chill: <span id="windchill"></span></p>
+
+<!-- Mobile SVG icon -->
+<img src="images/weather.png" alt="Weather Icon" class="weather-icon">
+
+</section>
+
+</main>
+
+<footer>
+<p>© <span id="year"></span> Oluwatobi Fawole | Nigeria</p>
+<p id="lastModified"></p>
+</footer>
+
+</body>
+</html>
