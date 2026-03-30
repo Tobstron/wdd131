@@ -174,3 +174,27 @@ function filterTemples(type) {
 
 // INITIAL LOAD
 displayTemples(temples);
+document.getElementById("home").addEventListener("click", (e) => {
+  e.preventDefault();
+  filterTemples("all");
+});
+
+document.getElementById("old").addEventListener("click", (e) => {
+  e.preventDefault();
+  filterTemples("old");
+});
+
+document.getElementById("new").addEventListener("click", (e) => {
+  e.preventDefault();
+  filterTemples("new");
+});
+
+document.getElementById("large").addEventListener("click", (e) => {
+  e.preventDefault();
+  filterTemples("large");
+});
+
+document.getElementById("small").addEventListener("click", (e) => {
+  e.preventDefault();
+  filterTemples("small");
+});
