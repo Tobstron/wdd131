@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Temple Album</title>
+
+  <meta name="description" content="Temple Album page for WDD 131 Dynamic Web Fundamentals by Oluwatobi Fawole featuring a responsive gallery of temple images.">
+  <meta name="author" content="Oluwatobi Fawole">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/temples.css">
+
+  <!-- JS -->
+  <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+
+<header>
+  <h2>Temple Album</h2>
+  <button id="menu">☰</button>
+
+  <nav>
+    <a href="#" onclick="filterTemples('all')">Home</a>
+    <a href="#" onclick="filterTemples('old')">Old</a>
+    <a href="#" onclick="filterTemples('new')">New</a>
+    <a href="#" onclick="filterTemples('large')">Large</a>
+    <a href="#" onclick="filterTemples('small')">Small</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Temple Album</h1>
+
+  <!-- Dynamic content goes here -->
+  <div id="temple-container"></div>
+</main>
+
+<footer>
+  <p>
+    © <span id="year"></span> Oluwatobi Fawole | Nigeria
+  </p>
+
+  <p id="lastModified"></p>
+</footer>
+
+</body>
+</html>
