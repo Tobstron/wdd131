@@ -6,14 +6,20 @@
 
   <title>Product Review</title>
 
+  <meta name="description" content="Product review form for WDD131 by Oluwatobi Fawole allowing users to submit product feedback and ratings.">
+  <meta name="author" content="Oluwatobi Fawole">
+
   <link rel="stylesheet" href="styles/form.css">
   <script src="scripts/form.js" defer></script>
 </head>
 
 <body>
 
-<h1>Product Review</h1>
+<header>
+  <h1>Product Review</h1>
+</header>
 
+<main>
 <form method="get" action="review.html">
 
   <!-- PRODUCT -->
@@ -26,11 +32,11 @@
   <fieldset>
     <legend>Overall Rating</legend>
 
-    <label><input type="radio" name="rating" value="1" required> ☆</label>
-    <label><input type="radio" name="rating" value="2"> ☆☆</label>
-    <label><input type="radio" name="rating" value="3"> ☆☆☆</label>
-    <label><input type="radio" name="rating" value="4"> ☆☆☆☆</label>
-    <label><input type="radio" name="rating" value="5"> ☆☆☆☆☆</label>
+    <label for="r1"><input type="radio" id="r1" name="rating" value="1" required> ☆</label>
+    <label for="r2"><input type="radio" id="r2" name="rating" value="2" required> ☆☆</label>
+    <label for="r3"><input type="radio" id="r3" name="rating" value="3" required> ☆☆☆</label>
+    <label for="r4"><input type="radio" id="r4" name="rating" value="4" required> ☆☆☆☆</label>
+    <label for="r5"><input type="radio" id="r5" name="rating" value="5" required> ☆☆☆☆☆</label>
   </fieldset>
 
   <!-- DATE -->
@@ -41,9 +47,10 @@
   <fieldset>
     <legend>Useful Features</legend>
 
-    <label><input type="checkbox" name="features" value="durability"> Durability</label>
-    <label><input type="checkbox" name="features" value="design"> Design</label>
-    <label><input type="checkbox" name="features" value="performance"> Performance</label>
+    <label for="f1"><input type="checkbox" id="f1" name="features" value="durability"> Durability</label>
+    <label for="f2"><input type="checkbox" id="f2" name="features" value="design"> Design</label>
+    <label for="f3"><input type="checkbox" id="f3" name="features" value="performance"> Performance</label>
+    <label for="f4"><input type="checkbox" id="f4" name="features" value="battery"> Battery Life</label>
   </fieldset>
 
   <!-- REVIEW -->
@@ -58,9 +65,10 @@
   <input type="submit" value="Submit Review">
 
 </form>
+</main>
 
 <footer>
-  <p>© <span id="year"></span> Oluwatobi Fawole</p>
+  <p>© <span id="year"></span> Oluwatobi Fawole | Nigeria</p>
 </footer>
 
 </body>
