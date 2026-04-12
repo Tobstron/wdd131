@@ -61,3 +61,45 @@ main {
 .card {
   margin-bottom: 1.5rem;
 }
+
+/* MOBILE NAV DEFAULT (HIDDEN) */
+nav {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  background: #0b1d3a;
+  padding: 1rem;
+}
+
+/* WHEN MENU IS OPEN */
+nav.open {
+  display: flex;
+}
+
+/* NAV LINKS */
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* HAMBURGER BUTTON */
+#menu {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  nav {
+    display: flex !important;
+    flex-direction: column;
+    background: none;
+  }
+
+  #menu {
+    display: none;
+  }
+}

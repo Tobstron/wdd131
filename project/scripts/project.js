@@ -4,7 +4,12 @@ const nav = document.querySelector("nav");
 
 menuButton.addEventListener("click", () => {
   nav.classList.toggle("open");
-  menuButton.textContent = menuButton.textContent === "☰" ? "X" : "☰";
+
+  if (menuButton.textContent === "☰") {
+    menuButton.textContent = "✖";
+  } else {
+    menuButton.textContent = "☰";
+  }
 });
 
 // FOOTER DATES
