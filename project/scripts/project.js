@@ -29,20 +29,20 @@ if (visitDisplay) {
 const ships = [
   {
     name: "Axiom One loading up",
-    type: "bomber",
+    type: "carrier",
     size: "large",
     image: "images/ship1.webp"
   },
   {
     name: "Axiom Gunship refueling",
-    type: "cargo",
+    type: "gunship",
     size: "large",
     image: "images/ship2.webp"
   },
   {
     name: "Axiom Executive Explorer",
     type: "explorer",
-    size: "small",
+    size: "medium",
     image: "images/ship3.webp"
   }
 ];
